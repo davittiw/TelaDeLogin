@@ -17,13 +17,11 @@
 
 .container{
     display: flex;
-    height: 50vh;
-    width: 90%;
-    background-color: beige;
+    height: 60vh;
+    width: 60vw;
 }
 
 .introducao, .login-time{
-    padding: 30px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -33,17 +31,36 @@
 .introducao{
     background-color: aqua;
     text-align: justify;
+    padding: 100px;
 }
 
-.introducao .textoIntroducao h2{
+.introducao .textoIntroducao{
     text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .login-time{
-    background-color: pink;
+    background-color: rgb(238, 238, 238);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+}
+
+.login-time i{
+    position: relative;
+    top: 16%;
+    left: 11.5px;
+    transform: translateY(-50%);
+    color: rgba(182, 182, 182, 0.616);
+    font-size: 16px;
+}
+
+.user-login{
+    font-size: 23px;
+    margin-bottom: 20px;
 }
 
 form{
@@ -51,10 +68,23 @@ form{
     flex-direction: column;
 }
 
-label, input{
+input{
     margin-bottom: 10px;
+    width: 240px;
+    height: 35px;
+    border: none;
+    border-radius: 60px;
+    padding-left: 30px;
 }
 
 button{
     margin-top: 10px;
+    width: 130px;
+    border-radius: 60px;
+    border: none;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    background-color: rgb(219, 233, 248);
 }
