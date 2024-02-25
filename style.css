@@ -22,6 +22,7 @@ body{
     display: flex;
     height: 60vh;
     width: 60vw;
+    padding: auto;
 }
 
 .introducao, .login-time{
@@ -32,9 +33,10 @@ body{
 }
 
 .introducao{
-    background-color: aqua;
+    background-color: rgba(61, 108, 236, 0.24);
     text-align: justify;
     padding: 100px;
+    color: white;
 }
 
 .introducao .textoIntroducao{
@@ -49,15 +51,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .login-time i{
     position: relative;
-    top: 17%;
-    left: 11.5px;
+    top: 28%;
+    left: 11%;
     transform: translateY(-50%);
     color: rgba(182, 182, 182, 0.616);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .user-login{
@@ -67,17 +70,12 @@ body{
     text-transform: uppercase;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-}
-
 input{
     width: 230px;
     height: 35px;
     border: none;
     border-radius: 60px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
 .user-form{
@@ -87,21 +85,24 @@ input{
 
 .forgot{
     display: flex;
-    justify-content: space-between;
-    padding: 2px 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    text-align: center;
 }
 
-.forgot p{
-    font-size: 11px;
-    width: 130px;
-    color: rgb(143, 201, 252);
-    margin-bottom: 10px;
-    margin-left: 10px;
-    text-transform: lowercase;
+.forgot i{
+    font-size: 20px;
+    width: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 button{
-    margin-top: 10px;
     width: 130px;
     border-radius: 60px;
     border: none;

@@ -16,22 +16,22 @@
                 </p>
             </div>
             <div class="login-time">
-                <p class="user-login">User Login</p>
+                <p class="user-login">Login Your Account</p>
                 <form method="post" action="login.php" class="user-form">
-                    <i class="fa-solid fa-user"></i>
-                    <input class="nome-user" id="txtUser" placeholder=" nome" name="txtUser" type="text">
-
-                    <br>
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="password-input" placeholder="senha">
-                    <br>
-
-                    <div class="forgot">
-                        <p class="eye-password" onclick="togglePasswordVisibility()">
-                            <i class="fa-regular fa-eye" id="eye-icon"></i>show
-                        </p>
+                    <div class="input-container">
+                        <i class="fa-solid fa-user"></i>
+                        <input class="nome-user" id="txtUser" placeholder=" username" name="txtUser" type="text">
                     </div>
-
+                        <br>
+                    <div class="input-container">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password-input" placeholder=" password">
+                    </div>
+                    <div class="forgot">
+                        <div class="eye-password" onclick="togglePasswordVisibility()">
+                            <i class="fa-regular fa-eye" id="eye-icon"></i>
+                        </div>
+                    </div>
                     <button type="submit" class="enviar">Login</button>
                 </form>
             </div>
