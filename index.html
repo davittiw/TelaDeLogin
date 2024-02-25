@@ -17,17 +17,27 @@
             </div>
             <div class="login-time">
                 <p class="user-login">User Login</p>
-                <form method="post" action="login.php" class="user-login">
+                <form method="post" action="login.php" class="user-form">
                     <i class="fa-solid fa-user"></i>
                     <input class="nome-user" id="txtUser" placeholder=" nome" name="txtUser" type="text">
 
-                    <i class="fa-solid fa-lock"></i>
-                    <input class="senha-user" id="txtPassword" placeholder=" senha" name="txtPassword" type="text">
                     <br>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password-input" placeholder="senha">
+                    <br>
+
+                    <div class="forgot">
+                        <p class="eye-password" onclick="togglePasswordVisibility()">
+                            <i class="fa-regular fa-eye" id="eye-icon"></i>show
+                        </p>
+                    </div>
+
                     <button type="submit" class="enviar">Login</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
