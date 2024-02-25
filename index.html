@@ -9,20 +9,23 @@
 </head>
 <body>
     <section id="login-table">
-        <div class="introducao">
-            <h3>Welcome to website</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium labore nemo ab quos numquam iste nobis possimus provident qui harum, cupiditate asperiores itaque sequi recusandae quis eius dignissimos! Culpa!</p>
-        </div>
-        <div class="login-time">
-            <form method="post" action="login.php" class="user-login">
-                <label class="info"><b>User</b></label>
-                <input class="nome-user" name="txtUser" type="text">
+        <div class="container">
+            <div class="introducao">
+                <h2 class="textoIntroducao">Welcome to website</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium labore nemo ab quos numquam iste nobis possimus provident qui harum, cupiditate asperiores itaque sequi recusandae quis eius dignissimos! Culpa!</p>
+            </div>
+            <div class="login-time">
+                <h3 class="user-login">User Login</h3>
+                <form method="post" action="login.php" class="user-login">
+                    <label for="txtUser" class="info"><b>User</b></label>
+                    <input class="nome-user" id="txtUser" name="txtUser" type="text">
 
-                <label class="info"><b>Senha</b></label>
-                <input class="senha-user" name="txtPassword" type="text">
-                <br>
-                <button class="enviar">Enviar</button>
-            </form>
+                    <label for="txtPassword" class="info"><b>Senha</b></label>
+                    <input class="senha-user" id="txtPassword" name="txtPassword" type="text">
+                    <br>
+                    <button type="submit" class="enviar">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
 </body>

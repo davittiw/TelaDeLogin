@@ -7,12 +7,54 @@
 }
 
 #login-table {
-    width: 700px;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+}
+
+.container{
+    display: flex;
+    height: 50vh;
+    width: 90%;
+    background-color: beige;
+}
+
+.introducao, .login-time{
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .introducao{
-    
+    background-color: aqua;
+    text-align: justify;
+}
+
+.introducao .textoIntroducao h2{
+    text-align: left;
+}
+
+.login-time{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label, input{
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 10px;
 }
